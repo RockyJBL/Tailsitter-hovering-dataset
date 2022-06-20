@@ -11,7 +11,7 @@ The flight data is collected on a quadrotor tail-sitter UAV based on an Arkbird 
 The flight data is collected using both offboard and manual flight modes. In the offboard mode, the UAV tracks the local position references sent to MAVROS topic ~setpoint_position/local. The reference trajectory contains step changes in all three directions. Three step sizes 1, 1.5, and 2 meters were designed. In the manual mode, the UAV is operated by an expert pilot using Futaba T16SZ remote control. Three flight modes position, altitude, and stabilized are chosen to enrich the maneuvering intensity. Each experiment setup is performed three times to attenuate the influence of random error, resulting in 18 flight logs. The take-off and landing parts are chopped for better data quality and the total flight time is 24 minutes.
 
 ## Data Process
-The UAV states are recorded to the onboard memory card including position, velocity, acceleration, attitude, angular rate, controls input, and motor PWM. The recorded states and their units and sources are listed in the following table. <br />
+The UAV states are recorded to the onboard memory card, including position, velocity, acceleration, attitude, angular rate, controls input, and motor PWM. The recorded states, units and sources are listed in the following table. <br />
 |State|Unit|Source|
 | ---------------------- | ---------------------- |---------------------- |
 |Local position|m|MAVROS topic ~local_position/pose|
@@ -27,7 +27,7 @@ The UAV states are recorded to the onboard memory card including position, veloc
 |Actuator controls|N/A|MAVROS topic ~target_actuator_control|
 |Actuator outputs|ms|MAVROS topic ~actuator_outputs|
 
-Since states are recorded from various topics with different sampling rates, the raw data with ros timestamp is synchronized by interpolation at 100 Hz. All data are filtered using the "movmean" function in MATLAB to remove high frequency noise. Since veoicty and accleration are calculated by time derivative, the result is very sensitive to high frequency noise.
+Since states are recorded from various topics with different sampling rates, the raw data with ros timestamp is synchronized by interpolation at 100 Hz. All data are filtered using the "movmean" function in MATLAB to remove high frequency noise. Since velocity and acceleration are calculated by time derivative, the result is susceptible to high frequency noise.
 
 ## Distribution
 The distribution of the processed data is listed below. Note that vision data is used in the figure. <br />
