@@ -1,6 +1,6 @@
 # Tail-sitter-dataset
 ## Introduction
-This dataset is gathered for quadrotor tail-sitter UAV system identification and modeling by PolyU MAV/UAV Lab.
+This dataset is gathered for quadrotor tail-sitter UAV system identification and modeling by PolyU MAV/UAV Lab. Various operating conditions are recorded during the UAV hovering phase.<br />
 Format: MATLAB.mat file
 
 ## Hardware
