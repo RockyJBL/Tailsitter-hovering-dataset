@@ -4,7 +4,7 @@ This dataset is gathered for quadrotor tail-sitter UAV system identification and
 Format: MATLAB.mat file
 
 ## Hardware
-The flight data is collected on a quadrotor tail-sitter UAV based on an Arkbird VTOL airframe. The UAV is equipped with a 3S LiPo 2200 mAh battery, 4 Sunnysky R2207 KV2580 motors with ESCs, and two servo motors for elevon control. The flight controller is a PixRacer autopilot board that communicates with an offboard computer via Wi-Fi module ESP8266. The offboard computer is a laptop with an Intel Core i7 that runs Ubuntu 18.04 OS. The vehicle position and orientation are measured at 200 Hz using a Vicon motion capture system with 12 cameras. The Vicon system is well calibrated before the data collection process.<br />
+The flight data is collected on a quadrotor tail-sitter UAV based on an Arkbird VTOL airframe with a total mass of 0.83kg. The UAV is equipped with a 3S LiPo 2200 mAh battery, 4 Sunnysky R2207 KV2580 motors with ESCs, and two servo motors for elevon control. The flight controller is a PixRacer autopilot board that communicates with an offboard computer via Wi-Fi module ESP8266. The offboard computer is a laptop with an Intel Core i7 that runs Ubuntu 18.04 OS. The vehicle position and orientation are measured at 200 Hz using a Vicon motion capture system with 12 cameras. The Vicon system is well calibrated before the data collection process.<br />
 <img src="fig/arkbird.JPEG" width="500">
 
 ## Experiment Setup
